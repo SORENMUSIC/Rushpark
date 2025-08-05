@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RushPark</title>
+  
+  <!-- Inter font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-zinc-900 text-white antialiased">
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-zinc-900 bg-opacity-80 backdrop-blur-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <h1 class="text-3xl font-bold text-white">Rush<span class="text-yellow-500">Park</span></h1>
+      </div>
+      <div class="flex items-center space-x-6 text-zinc-300 font-semibold">
+        <a href="#about" class="hover:text-yellow-500 transition-colors duration-200">About</a>
+        <a href="#features" class="hover:text-yellow-500 transition-colors duration-200">Features</a>
+        <a href="#pricing" class="hover:text-yellow-500 transition-colors duration-200">Pricing</a>
+        <a href="#investors" class="bg-yellow-500 text-zinc-900 px-4 py-2 rounded-full hover:bg-yellow-400 transition-colors duration-200">Investors</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url(https://placehold.co/1920x1080/000/FFF?text=RushPark+Trampoline+Park);">
+        <div class="absolute inset-0 bg-zinc-900 opacity-70"></div>
+      </div>
+      <div class="relative z-10 flex flex-col items-center p-6">
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4">
+          Rush<span class="text-yellow-500">Park</span>
+        </h2>
+        <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl">
+          Albany's Premier Active-Entertainment Center
+        </p>
+        <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl mt-2">
+          Get ready to jump, climb, and play! Opening in 2026.
+        </p>
+        <div class="mt-8">
+          <a href="#investors" class="bg-yellow-500 text-zinc-900 font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-yellow-400 transition-colors duration-200">
+            Join Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-zinc-800">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-white mb-4">The RushPark Vision</h2>
+        <p class="text-lg text-zinc-300 max-w-3xl mx-auto mb-10">
+          RushPark is set to become Albany, GA's first locally-owned, boutique trampoline and active-entertainment center. We are building a community hub for fun, fitness, and unforgettable memories.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+          <div class="flex items-center space-x-3 text-left">
+            <i data-lucide="map-pin" class="text-yellow-500 w-8 h-8 flex-shrink-0"></i>
+            <div>
+              <p class="font-semibold text-zinc-300">Location:</p>
+              <p class="text-white text-lg">214 Adelyn Rd, Albany, GA</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 text-left">
+            <i data-lucide="layout" class="text-yellow-500 w-8 h-8 flex-shrink-0"></i>
+            <div>
+              <p class="font-semibold text-zinc-300">Space:</p>
+              <p class="text-white text-lg">~7,000 sq. ft indoor buildout on 1.5 acres</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 text-left">
+            <i data-lucide="clock" class="text-yellow-500 w-8 h-8 flex-shrink-0"></i>
+            <div>
+              <p class="font-semibold text-zinc-300">Opening:</p>
+              <p class="text-white text-lg">2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-zinc-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-white mb-12">Features & Layout</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Feature Card 1 -->
+          <div class="flex flex-col items-center p-6 text-center bg-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <i data-lucide="sparkles" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Open Jump Courts</h3>
+            <p class="text-zinc-400">Our main attraction, perfect for free-jumping and high-flying fun.</p>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="flex flex-col items-center p-6 text-center bg-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <i data-lucide="footprints" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Ninja Obstacle Course</h3>
+            <p class="text-zinc-400">Challenge yourself and your friends on our thrilling obstacle course.</p>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="flex flex-col items-center p-6 text-center bg-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <i data-lucide="users" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Dodgeball & Basketball</h3>
+            <p class="text-zinc-400">Dedicated courts for trampoline dodgeball and slam-dunking basketball hoops.</p>
+          </div>
+
+          <!-- Feature Card 4 -->
+          <div class="flex flex-col items-center p-6 text-center bg-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <i data-lucide="swords" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Foam Pit Landing Zone</h3>
+            <p class="text-zinc-400">Launch yourself into a soft, safe landing in our giant foam pit.</p>
+          </div>
+
+          <!-- Feature Card 5 -->
+          <div class="flex flex-col items-center p-6 text-center bg-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <i data-lucide="party-popper" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Party Rooms & VIP Spaces</h3>
+            <p class="text-zinc-400">Private rooms available for birthday parties, corporate events, and more.</p>
+          </div>
+
+          <!-- Feature Card 6 -->
+          <div class="flex flex-col items-center p-6 text-center bg-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <i data-lucide="utensils" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Snack Café & Retail</h3>
+            <p class="text-zinc-400">Fuel up with snacks and drinks, and grab some branded merchandise.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-zinc-800">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-white mb-12">Pricing Strategy</h2>
+        <div class="bg-zinc-900 p-8 rounded-2xl shadow-2xl max-w-2xl mx-auto">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-zinc-300">
+              <thead>
+                <tr class="border-b border-zinc-700 text-yellow-500">
+                  <th class="px-4 py-4 font-semibold text-xl">Service</th>
+                  <th class="px-4 py-4 font-semibold text-xl text-right">Price (GA Locals)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-zinc-700">
+                  <td class="px-4 py-4">1-hour jump</td>
+                  <td class="px-4 py-4 text-right font-bold text-white">$16</td>
+                </tr>
+                <tr class="border-b border-zinc-700">
+                  <td class="px-4 py-4">2-hour jump</td>
+                  <td class="px-4 py-4 text-right font-bold text-white">$24</td>
+                </tr>
+                <tr class="border-b border-zinc-700">
+                  <td class="px-4 py-4">Full-day pass (weekend)</td>
+                  <td class="px-4 py-4 text-right font-bold text-white">$35</td>
+                </tr>
+                <tr class="border-b border-zinc-700">
+                  <td class="px-4 py-4">Party room rental + jump</td>
+                  <td class="px-4 py-4 text-right font-bold text-white">$200/hour (min 2 hrs)</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-4">Birthday party package (10 kids)</td>
+                  <td class="px-4 py-4 text-right font-bold text-white">$350</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investor Section -->
+    <section id="investors" class="py-20 bg-yellow-500 text-zinc-900">
+      <div class="container mx-auto px-4 text-center">
+        <div class="flex flex-col items-center">
+          <h2 class="text-4xl font-bold mb-4">Seeking Investors</h2>
+          <p class="text-lg mb-8 max-w-3xl">
+            Be part of a $900K project to bring Albany’s first locally-owned, boutique trampoline & active-entertainment center to life.
+          </p>
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl w-full text-left">
+            <!-- Offering -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-start">
+              <i data-lucide="handshake" class="w-12 h-12 text-zinc-900 mb-4"></i>
+              <h3 class="text-2xl font-bold mb-2">We're Offering</h3>
+              <ul class="list-disc list-inside space-y-2 text-zinc-700">
+                <li>Equity: 40–50% ownership in a high-growth local concept.</li>
+                <li>OR, a 15–20% annual return until your investment is repaid in 5–6 years.</li>
+              </ul>
+            </div>
+            <!-- Projections -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-start">
+              <i data-lucide="trending-up" class="w-12 h-12 text-zinc-900 mb-4"></i>
+              <h3 class="text-2xl font-bold mb-2">Year 1 Projections</h3>
+              <ul class="list-disc list-inside space-y-2 text-zinc-700">
+                <li>Gross Revenue: $1.2M+</li>
+                <li>Profit Margins (EBITDA): 15–20%</li>
+                <li>Expected Breakeven: Year 2-3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-12 flex flex-col items-center">
+            <p class="text-xl font-semibold mb-4">Interested in learning more?</p>
+            <a 
+              href="mailto:sorennmedia@gmail.com" 
+              class="bg-zinc-900 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-zinc-700 transition-colors duration-200 flex items-center"
+            >
+              <i data-lucide="mail" class="mr-3"></i>
+              Contact Us Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 py-6 text-center text-zinc-500">
+    <p>&copy; 2024 RushPark. All rights reserved.</p>
+    <p>Opening 2026</p>
+  </footer>
+
+  <!-- Lucide Icons initialization script -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
